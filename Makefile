@@ -12,6 +12,7 @@
 ###############################################################################
 
 
+
 # Things that the user might override on the commandline
 #
 
@@ -643,6 +644,7 @@ targets-f7:
 
 targets-f7-print:
 	$(V1) $(MAKE) -s targets-by-mcu MCU_TYPE=STM32F7
+
 
 ## test              : run the Betaflight test suite
 ## junittest         : run the Betaflight test suite, producing Junit XML result files.

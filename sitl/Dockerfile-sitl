@@ -1,0 +1,13 @@
+FROM gazebo:gzserver9
+
+SHELL ["/bin/bash", "-c"]
+ARG DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get upgrade -y
+
+# ============================
+# Gazebo setup
+# ============================
+
+RUN mkdir -p /worlds
+COPY sitl/worlds/iris_demo.world /worlds
